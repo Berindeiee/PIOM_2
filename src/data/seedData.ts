@@ -7,6 +7,11 @@ export const seedState: AppState = {
     { id: 'u3', name: 'Ana Gomez', role: 'STUDENT' },
     { id: 'u4', name: 'Noah Patel', role: 'STUDENT' },
     { id: 'u5', name: 'Taylor Lee', role: 'OTHER' },
+    { id: 'u6', name: 'Dr. Andrei Popescu', role: 'FACULTY' },
+    { id: 'u7', name: 'Prof. Ioana Dumitrescu', role: 'FACULTY' },
+    { id: 'u8', name: 'Maria Ionescu', role: 'STUDENT' },
+    { id: 'u9', name: 'Alexandru Stoica', role: 'STUDENT' },
+    { id: 'u10', name: 'Elena Marinescu', role: 'OTHER' },
   ],
   topics: [
     {
