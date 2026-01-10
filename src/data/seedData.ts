@@ -2,16 +2,16 @@ import { AppState } from '../models/types';
 
 export const seedState: AppState = {
   users: [
-    { id: 'u1', name: 'Dr. Maya Chen', role: 'FACULTY' },
-    { id: 'u2', name: 'Prof. Luca Rossi', role: 'FACULTY' },
-    { id: 'u3', name: 'Ana Gomez', role: 'STUDENT' },
-    { id: 'u4', name: 'Noah Patel', role: 'STUDENT' },
-    { id: 'u5', name: 'Taylor Lee', role: 'OTHER' },
-    { id: 'u6', name: 'Dr. Andrei Popescu', role: 'FACULTY' },
-    { id: 'u7', name: 'Prof. Ioana Dumitrescu', role: 'FACULTY' },
-    { id: 'u8', name: 'Maria Ionescu', role: 'STUDENT' },
-    { id: 'u9', name: 'Alexandru Stoica', role: 'STUDENT' },
-    { id: 'u10', name: 'Elena Marinescu', role: 'OTHER' },
+    { id: 'u1', name: 'Dr. Andrei Popescu', role: 'FACULTY' },
+    { id: 'u2', name: 'Prof. Ioana Dumitrescu', role: 'FACULTY' },
+    { id: 'u3', name: 'Ana Ionescu', role: 'STUDENT' },
+    { id: 'u4', name: 'Mihai Stoica', role: 'STUDENT' },
+    { id: 'u5', name: 'Elena Marinescu', role: 'OTHER' },
+    { id: 'u6', name: 'Dr. Radu Georgescu', role: 'FACULTY' },
+    { id: 'u7', name: 'Prof. Daniela Stan', role: 'FACULTY' },
+    { id: 'u8', name: 'Maria Popa', role: 'STUDENT' },
+    { id: 'u9', name: 'Alexandru Ilie', role: 'STUDENT' },
+    { id: 'u10', name: 'Ioan Petrescu', role: 'OTHER' },
   ],
   topics: [
     {
