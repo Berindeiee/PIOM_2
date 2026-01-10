@@ -1,0 +1,90 @@
+import { AppState } from '../models/types';
+
+export const seedState: AppState = {
+  users: [
+    { id: 'u1', name: 'Dr. Maya Chen', role: 'FACULTY' },
+    { id: 'u2', name: 'Prof. Luca Rossi', role: 'FACULTY' },
+    { id: 'u3', name: 'Ana Gomez', role: 'STUDENT' },
+    { id: 'u4', name: 'Noah Patel', role: 'STUDENT' },
+    { id: 'u5', name: 'Taylor Lee', role: 'OTHER' },
+  ],
+  topics: [
+    {
+      id: 't1',
+      title: 'Sustainable Supply Chain Dashboards',
+      description: 'Build a dashboard to visualize CO2 impact across supply routes.',
+      level: 'MSc',
+      tags: ['sustainability', 'analytics'],
+      createdByUserId: 'u1',
+      createdByRole: 'FACULTY',
+      status: 'OPEN',
+    },
+    {
+      id: 't2',
+      title: 'Bias Auditing in Scholarship Allocation',
+      description: 'Investigate fairness metrics for scholarship decisions.',
+      level: 'PhD',
+      tags: ['ethics', 'ai'],
+      createdByUserId: 'u3',
+      createdByRole: 'STUDENT',
+      status: 'OPEN',
+    },
+    {
+      id: 't3',
+      title: 'Campus Mobility Sensor Study',
+      description: 'Analyze sensor data to improve bike lane placement.',
+      level: 'BSc',
+      tags: ['iot', 'mobility'],
+      createdByUserId: 'u2',
+      createdByRole: 'FACULTY',
+      status: 'MATCHED',
+      matchedByUserId: 'u4',
+    },
+  ],
+  matches: [
+    {
+      id: 'm1',
+      topicId: 't3',
+      proposerId: 'u2',
+      accepterId: 'u4',
+      createdAt: '2024-03-04T10:20:00Z',
+    },
+  ],
+  messages: [
+    {
+      id: 'msg1',
+      matchId: 'm1',
+      senderId: 'u2',
+      content: 'Welcome aboard! Please review the sensor dataset outline.',
+      createdAt: '2024-03-05T09:00:00Z',
+    },
+    {
+      id: 'msg2',
+      matchId: 'm1',
+      senderId: 'u4',
+      content: 'Thanks! I will send an initial findings summary tomorrow.',
+      createdAt: '2024-03-05T10:15:00Z',
+    },
+  ],
+  documents: [
+    {
+      id: 'd1',
+      matchId: 'm1',
+      uploadedById: 'u2',
+      title: 'Sensor dataset overview',
+      type: 'request',
+      visibility: 'SHARED',
+      createdAt: '2024-03-05T12:00:00Z',
+    },
+  ],
+  evaluations: [
+    {
+      id: 'e1',
+      matchId: 'm1',
+      grade: 'B+',
+      feedback: 'Strong progress; add a methodology comparison section.',
+      updatedAt: '2024-03-18T14:00:00Z',
+    },
+  ],
+  activeUserId: 'u1',
+};
