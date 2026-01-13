@@ -26,7 +26,7 @@ const AppShell: React.FC<AppShellProps> = ({
           <div>
             <h1 style={{ margin: 0 }}>MyThesis</h1>
             <p className="muted" style={{ margin: 0, color: '#d1d5db' }}>
-              Desktop MVP prototype
+              Desktop prototype
             </p>
           </div>
           <nav className="nav-links">
